@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chaitanya Niranjan Sutrave - Python developer portfolio" />
+    <title>Chaitanya Niranjan Sutrave | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress"><span id="scrollProgressBar"></span></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="bg-blur blur-one"></div>
+    <div class="bg-blur blur-two"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Home">
+          <span class="brand-mark">C</span>
+          <span>Chaitanya</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="button button-primary nav-button">Hire Me</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal glass-panel">
+            <span class="eyebrow">Python Developer</span>
+            <h1>
+              Hello, I’m <span class="highlight">Chaitanya Niranjan</span>
+              <span class="line-break">Sutrave</span>
+            </h1>
+            <p class="typed-text" id="typedText"></p>
+            <p class="lead">
+              I build efficient backend systems and web applications with Python and Django,
+              focusing on performance, clean architecture, and practical database-driven solutions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="button button-primary ripple">View Projects</a>
+              <a href="#contact" class="button button-secondary ripple">Contact Me</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Highlights">
+              <li><strong>3+</strong><span>core skills</span></li>
+              <li><strong>5+</strong><span>project areas</span></li>
+              <li><strong>1</strong><span>portfolio</span></li>
+            </ul>
+          </div>
+
+          <div class="profile-card reveal">
+            <div class="profile-inner">
+              <div class="avatar">C</div>
+              <p class="role-tag">Python • Django • Database</p>
+              <h2>Developer Profile</h2>
+              <div class="status-pill">
+                <span class="status-dot"></span>
+                Available for opportunities
+              </div>
+              <div class="skill-badges">
+                <span>Python</span>
+                <span>Django</span>
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container split-section">
+          <div class="reveal">
+            <span class="eyebrow">About Me</span>
+            <h2>Turning logic into practical digital solutions.</h2>
+          </div>
+          <div class="reveal">
+            <p>
+              I am Chaitanya Niranjan Sutrave, a developer focused on Python, Django,
+              and database-driven applications. I enjoy building backend systems that are
+              efficient, scalable, and easy to maintain while improving user experience through
+              thoughtful design and reliable data handling.
+            </p>
+            <div class="resume-row">
+              <a href="mailto:chaitanyasutrave22@gmail.com?subject=Resume%20Request" class="button button-primary ripple">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Skills</span>
+            <h2>Core technologies I work with.</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="info-card reveal">
+              <div class="icon-box">Py</div>
+              <h3>Python</h3>
+              <p>Writing clean code, automation, and backend logic for practical solutions.</p>
+              <div class="skill-meter"><span class="skill-progress" data-level="92%"></span></div>
+            </article>
+
+            <article class="info-card reveal">
+              <div class="icon-box">Dj</div>
+              <h3>Django</h3>
+              <p>Developing robust web applications with structured models, views, and templates.</p>
+              <div class="skill-meter"><span class="skill-progress" data-level="88%"></span></div>
+            </article>
+
+            <article class="info-card reveal">
+              <div class="icon-box">DB</div>
+              <h3>Database</h3>
+              <p>Designing and managing database workflows for efficient data storage and access.</p>
+              <div class="skill-meter"><span class="skill-progress" data-level="90%"></span></div>
+            </article>
+
+            <article class="info-card reveal">
+              <div class="icon-box">SQL</div>
+              <h3>SQL</h3>
+              <p>Writing queries and handling database relationships with precision and clarity.</p>
+              <div class="skill-meter"><span class="skill-progress" data-level="85%"></span></div>
+            </article>
+
+            <article class="info-card reveal">
+              <div class="icon-box">API</div>
+              <h3>REST API</h3>
+              <p>Building APIs to connect applications and exchange data efficiently.</p>
+              <div class="skill-meter"><span class="skill-progress" data-level="86%"></span></div>
+            </article>
+
+            <article class="info-card reveal">
+              <div class="icon-box">DB</div>
+              <h3>MySQL</h3>
+              <p>Working with relational databases to create reliable data-driven platforms.</p>
+              <div class="skill-meter"><span class="skill-progress" data-level="82%"></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Experience</span>
+            <h2>My core focus areas, animated and interactive.</h2>
+          </div>
+
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2023</span>
+                <h3>Python Foundations</h3>
+                <p>Started learning Python and backend problem solving with practical coding exercises.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024</span>
+                <h3>Django Development</h3>
+                <p>Built web applications and structured user flows using Django-based architecture.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2025</span>
+                <h3>Database & API Work</h3>
+                <p>Focused on SQL, MySQL, and REST API design to support data-driven application logic.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-shell reveal">
+            <div class="tab-buttons" role="tablist" aria-label="Developer skill tabs">
+              <button class="tab-button active" type="button" data-tab="python" aria-selected="true">Python</button>
+              <button class="tab-button" type="button" data-tab="django" aria-selected="false">Django</button>
+              <button class="tab-button" type="button" data-tab="database" aria-selected="false">Database</button>
+            </div>
+
+            <div class="tab-panels">
+              <article class="tab-panel active" data-panel="python">
+                <h3>Python Development</h3>
+                <p>I build clean backend logic, automate repetitive tasks, and create practical solutions with maintainable code and problem-solving mindset.</p>
+                <ul>
+                  <li>Logic writing and project automation</li>
+                  <li>Clean coding structure</li>
+                  <li>Efficient solution design</li>
+                </ul>
+              </article>
+
+              <article class="tab-panel" data-panel="django">
+                <h3>Django Web Applications</h3>
+                <p>I enjoy creating structured web applications using Django, where performance, flow, and user experience come together in a simple architecture.</p>
+                <ul>
+                  <li>Model-view-template workflow</li>
+                  <li>Reusable application structure</li>
+                  <li>Secure and scalable app design</li>
+                </ul>
+              </article>
+
+              <article class="tab-panel" data-panel="database">
+                <h3>Database & SQL</h3>
+                <p>I design realistic database systems and write effective queries so data stays organized, accessible, and helpful for real-world applications.</p>
+                <ul>
+                  <li>Schema and relationship planning</li>
+                  <li>SQL query optimization</li>
+                  <li>MySQL and data management</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Projects</span>
+            <h2>Practical work and learning projects.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-top">
+                <span class="project-tag">Python</span>
+                <span class="project-tag tag-alt">Backend</span>
+              </div>
+              <h3>Student Management System</h3>
+              <p>
+                Created a backend-driven portal to store and manage student records, attendance,
+                and workflow data with a clean user-friendly interface.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <span class="project-tag">Django</span>
+                <span class="project-tag tag-alt">Web App</span>
+              </div>
+              <h3>Task Tracker Application</h3>
+              <p>
+                Built a task management system to organize items, track progress, and manage user
+                activity using Django logic and database operations.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <span class="project-tag">Database</span>
+                <span class="project-tag tag-alt">MySQL</span>
+              </div>
+              <h3>Inventory Dashboard</h3>
+              <p>
+                Developed a data-focused management dashboard for tracking inventory, records, and
+                system updates using relational database techniques.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-wrap">
+        <div class="footer-copy reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Let’s build something meaningful.</h2>
+        </div>
+
+        <div class="contact-box reveal">
+        <form class="contact-form" action="mailto:chaitanyasutrave22@gmail.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Your email" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Write your message"></textarea>
+          </label>
+          <button type="submit" class="button button-primary ripple">Send Message</button>
+        </form>
+        <p>Email: <a href="mailto:chaitanyasutrave22@gmail.com">chaitanyasutrave22@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919370015289">+91 93700 15289</a></p>
+        <div class="footer-actions">
+          <a href="mailto:chaitanyasutrave22@gmail.com" class="button button-primary ripple">Email Me</a>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
